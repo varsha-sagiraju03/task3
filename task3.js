@@ -25,14 +25,16 @@
 // let premium = false;
 // let admin = false;
 // console.log(authenticated && (premium || admin) ? "Full Access" : "Limited Access");
+// premium || admin (alse || false which is false,authenticated && false then true && false which results in false
+// so result is limited access
 // authenticated = false;
 // console.log(authenticated && (premium || admin) ? "Full Access" : "Limited Access");
-// //output:Limited Access
-// //Reason:console.log: "Full Access" because authenticated is true and premium is true.
+// result is Limited Access.
 // authenticated = true;
 // premium = true;
 // console.log(authenticated && (premium || admin) ? "Full Access" : "Limited Access");
-// output is Fill Access  "Full Access" again because the values remain unchanged.
+// premium || admin, (true || false) which is true,authenticated && true, true && truewhich is true
+// output is Full Access 
 
 // 3
 // let temperature = 25;
@@ -166,18 +168,18 @@
 // undefined is when we dont want to initialize the value & 
 // null is defined as when we dont want to initialize the value but have to give some value then use null
 
-// 11
-// let ageMine=23;
-// let License=true;
-// if(ageMine>18 , License){
-//     console.log('person can drive');
-// }
-// else{
-//     console.log('person cannot drive');
-// }
+11
+let ageMine=23;
+let License=true;
+if(ageMine>18 , License){
+    console.log('person can drive');
+}
+else{
+    console.log('person cannot drive');
+}
 
 // 13
-let myAge =23;
+var myAge =23;
 // myAge = 23;
 
 if (myAge < 13) {
